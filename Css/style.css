@@ -1,0 +1,179 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/* ===================================================================== */
+/* ===============================Font/Text============================= */
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../Fonts/Poppins/Poppins-Light.ttf") format("truetype");
+}
+
+
+/* ===================================================================== */
+/* ===============================Background============================ */
+
+.first-background {
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+
+/* ===================================================================== */
+/* ===============================Grid================================== */
+
+/* ===================================================================== */
+/* =============================content================================= */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 20rem;
+
+}
+
+/* ===================================================================== */
+/* =============================row-1=================================== */
+.row-1 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+}
+
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+  display: grid;
+  grid-column: 1/-1;
+  position: relative;
+  margin-top: 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 40rem;
+  overflow: hidden;
+
+}
+
+.row-2 {
+  grid-row: 2/3;
+
+}
+
+.row-3 {
+  grid-row: 3/4;
+}
+
+.row-4 {
+  grid-row: 4/5;
+}
+
+.row-5 {
+  grid-row: 5/6;
+}
+
+h1.title-phrase {
+  font-family: "Poppins-Light";
+  font-size: 1.25rem;
+  color: #ffffff;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  background-color: #39603D;
+}
+
+.environment-img-1 {
+  display: block;
+  width: 70vw;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.row-1-span {
+  margin: auto;
+}
+
+.row-1-span h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  border-radius: 0rem;
+}
+
+.row-2-span,
+.row-4-span {
+  transform: translateX(-2000px);
+}
+
+.row-3-span,
+.row-5-span {
+  transform: translateX(2000px);
+}
+
+
+.environment-img {
+  width: 40rem;
+}
+
+
+/* ===================================================================== */
+/* =============================animation=============================== */
+
+
+.left-to-right-transform {
+  animation: left-to-right 1s forwards;
+}
+
+@keyframes left-to-right {
+  from {
+    transform: translateX(-2000px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.right-to-left-transform {
+  animation: right-to-left 1s forwards;
+}
+
+@keyframes right-to-left {
+  from {
+    transform: translateX(2000px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+/* ===================================================================== */
+/* =============================row-7=================================== */
+.row-7 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-row: 7/8;
+  margin-top: 3rem;
+  grid-column: 2/-2;
+}
+
+.social-media-icons {
+  width: 5rem;
+  max-width: 5rem;
+}
+
+.social-media {
+  display: grid;
+  grid-column: 4/8;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  grid-row: 1/-1;
+}
